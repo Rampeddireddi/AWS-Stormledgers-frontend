@@ -5,8 +5,8 @@ AUTH: {
 LOGIN: "/api/v1/auth/login",
 REGISTER: "/api/v1/auth/register",
 GET_USER_INFO: "/api/v1/auth/getUser",
-VERIFY_OTP: "/api/v1/auth/verify-otp",  // ✅ Add this
-// RESEND_OTP: "/api/v1/auth/resend-otp",  // ✅ Add this too
+VERIFY_OTP: "/api/v1/auth/verify-otp",  
+// RESEND_OTP: "/api/v1/auth/resend-otp",   not added, lets leave it for later
 },
 DASHBOARD: {
 GET_DATA: "/api/v1/dashboard",
@@ -14,7 +14,7 @@ GET_DATA: "/api/v1/dashboard",
 INCOME: {
 ADD_INCOME: "/api/v1/income/add",
 GET_ALL_INCOME: "/api/v1/income/get",
-DELETE_INCOME: (incomeId) => `/api/v1/income/${incomeId}`,
+DELETE_INCOME: (incomeId) => `/api/v1/income/${incomeId}`,  
 DOWNLOAD_INCOME: "/api/v1/income/downloadexcel",
 },
 EXPENSE: {
