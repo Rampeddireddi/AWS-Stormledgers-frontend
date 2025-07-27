@@ -3,12 +3,12 @@ FROM node:alpine3.18 as build
 # Declare build time environment variables
 ARG REACT_APP_NODE_ENV
 ARG REACT_APP_SERVER_BASE_URL
-ARG VITE_API_URL
+ARG VITE_API_KEY
 
 # Set default values for environment variables
 ENV REACT_APP_NODE_ENV=$REACT_APP_NODE_ENV
 ENV REACT_APP_SERVER_BASE_URL=$REACT_APP_SERVER_BASE_URL
-ENV VITE_API_URL=$VITE_API_URL
+ENV VITE_API_KEY=$VITE_API_KEY
 
 # Build App
 WORKDIR /app
@@ -17,7 +17,7 @@ RUN npm install
 COPY . ./
 
 # Debug log (optional)
-RUN echo "VITE_API_URL: $VITE_API_URL"
+RUN echo "VITE_API_KEY: $VITE_API_KEY"
 
 RUN npm run build
 
