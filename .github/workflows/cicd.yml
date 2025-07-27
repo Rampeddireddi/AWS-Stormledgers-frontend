@@ -16,7 +16,7 @@ jobs:
             docker build -t rampeddireddi/stormledgers-frontend \
             --build-arg REACT_APP_NODE_ENV=production \
             --build-arg REACT_APP_SERVER_BASE_URL=http://54.90.124.52:5000 \
-        
+            .
       - name: Publish Image to docker hub
         run: docker push rampeddireddi/stormledgers-frontend:latest
   deploy:
