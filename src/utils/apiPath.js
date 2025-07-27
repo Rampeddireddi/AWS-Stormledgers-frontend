@@ -1,4 +1,4 @@
-export const BASE_URL = "https://expense-tracker-backend-7qo0.onrender.com";
+export const BASE_URL = "http://54.90.124.52:5000";
 //utils/apiPaths.js
 export const API_PATHS = {
 AUTH: {
