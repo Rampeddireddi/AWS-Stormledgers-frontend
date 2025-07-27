@@ -11,7 +11,7 @@ import { Toaster } from 'react-hot-toast'
   import { Myinfo } from './components/Myinfo';
     import Footer from './components/Footer';
 import ChatMessage from './components/ChatMessage';
- import Header from './Components/Header';
+
 import { SlArrowDown } from "react-icons/sl";
   import { GoHubot } from "react-icons/go";
 import OtpVerification from './components/Auth/OtpVerification'
