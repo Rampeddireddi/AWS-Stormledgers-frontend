@@ -1,4 +1,4 @@
-export const BASE_URL = "http://54.90.124.52:5000";
+export const BASE_URL = "http://54.90.124.52:4000";
 //utils/apiPaths.js
 export const API_PATHS = {
 AUTH: {
