@@ -30,7 +30,7 @@ try {
 const response = await axiosInstance.post(API_PATHS.AUTH.LOGIN, {
 email,
 password,
-});
+},{ timeout: 60000 });
 const { token, user } = response.data;
 if (token) {
 console.log("Setting token in localStorage:", token);
