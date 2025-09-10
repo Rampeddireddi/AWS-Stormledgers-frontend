@@ -39,7 +39,8 @@ const SignUp = () => {
       email,
       password,
       profileImageUrl,
-    });
+    },
+  { timeout: 60000 });
 
     // ✅ FIX: Destructure user & token safely
     const { user, token } = response.data;
